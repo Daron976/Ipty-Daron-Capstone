@@ -42,18 +42,17 @@
 - Run `npm start` in an intergrated terminal in order to start a local live server.
 - Or try the [Live Demo]() (if available)
 
-
 ## Author/s
+
+👤 **Iptisam Mukadam**
+
+- GitHub: [@githubhandle](https://github.com/Iptysam)
 
 👤 **Daron Wiafe**
 
 - GitHub: [@githubhandle](https://github.com/Daron976)
 - Twitter: [@twitterhandle](https://twitter.com/WiafeDaron)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/daron-wiafe-1b88141a6/)
-
-👤 **Iptisam Mukadam**
-
-- GitHub: [@githubhandle](https://github.com/Iptysam)
 
 ## 🤝 Contributing
 
