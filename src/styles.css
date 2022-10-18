@@ -42,3 +42,15 @@ li {
   bottom: 0;
   width: 100%;
 }
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 20%;
+  margin-top: 20%;
+}
+
+.fa-heart {
+  margin-top: -20px;
+  margin-left: 35%;
+}
