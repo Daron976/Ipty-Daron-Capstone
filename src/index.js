@@ -2,27 +2,6 @@
 import _ from 'lodash';
 import './styles.css';
 
-const newArray = [
-    {
-        name: 'brewery 1'
-    },
-    {
-        name: 'brewery 2'
-    },
-    {
-        name: 'brewery 3'
-    },
-    {
-        name: 'brewery 4'
-    },
-    {
-        name: 'brewery 5'
-    },
-    {
-        name: 'brewery 6'
-    }
-]
-
 const getList = async () => {
     const items = document.getElementById('list-items');
     await fetch(
@@ -33,10 +12,8 @@ const getList = async () => {
         const nameHolder = document.querySelectorAll('.brewery-name');
         const arr = Array.from(nameHolder);
         let counter = 0;
-        arr.forEach((task) => {
-            task.innerHTML += data[counter].name;
-            // for (let i = 0; i < 6; i++) {
-            // }
+        arr.forEach((task, i) => {
+            task.innerHTML += data[i].name;
             counter++;
         })
         
