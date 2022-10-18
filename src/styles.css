@@ -9,3 +9,36 @@ body {
   height: 100%;
   z-index: -1;
 }
+
+/* desktop version */
+
+.nav-bar,
+.footer-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+.logo {
+  border: 1px solid black;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.links {
+  display: flex;
+  gap: 2.5rem;
+}
+
+li {
+  list-style: none;
+}
+
+.footer-info {
+  justify-content: flex-start;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
