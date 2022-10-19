@@ -38,7 +38,36 @@ li {
 
 .footer-info {
   justify-content: flex-start;
-  position: fixed;
   bottom: 0;
   width: 100%;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  margin: 5rem;
+}
+
+.fa-heart {
+  margin-top: -20px;
+  margin-left: 35%;
+}
+
+/* home page */
+
+.bre-img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 35px;
+}
+
+.name-with-likes {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+article {
+  margin-bottom: 1rem;
 }
