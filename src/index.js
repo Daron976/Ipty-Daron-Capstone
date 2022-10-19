@@ -57,6 +57,24 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 })
 
+async function postComment(url, dataObj) {
+  const response = await fetch(url, {
+    method: 'POST',
+    body: JSON.stringify(dataObj),
+    headers: {
+      'Content-type': 'application/json; charset=UTF-8',
+    },
+  });
+
+  return response.json();
+}
+
+const getComment = async () => {
+  const response = await fetch();
+
+  return response;
+};
+
 const displayPopUp = async () => {
  return await commentArray.forEach((btn) => {
     btn.addEventListener('click', (e) => {
@@ -98,7 +116,7 @@ const displayPopUp = async () => {
                         <label for="text"></label>
                         <textarea name="text" id="text" cols="30" rows="5" placeholder="Your comment"></textarea>
                         <div class="btn-width">
-                          <button type="button" class="btn">Comment</button>
+                          <button type="button" id="comment-submission" class="btn">Comment</button>
                         </div>
                       </form>
                     </div>
@@ -111,6 +129,25 @@ const displayPopUp = async () => {
             document.querySelector('.fa-x').addEventListener('click', () => {
               const removed = document.querySelector('.popup-window')
               popUpHolder.removeChild(removed);
+            })
+
+            const commentName = document.querySelector('#name');
+            const commentText = document.querySelector('.text');
+            const commentId = 0;
+
+            document.querySelector('#comment-submission').addEventListener(() => {
+              const commentName = document.querySelector('#name');
+              const commentText = document.querySelector('.text');
+            
+              const commentObj = {
+                item_id: commentId,
+                username: commentName.value,
+                comment: commentText.value,
+              }
+            
+              commentId++;
+            
+              postComment('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/Gr2VdVSYrpHkHWrCrrcv/comments', commentObj);
             })
           }
         }
