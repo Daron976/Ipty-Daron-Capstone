@@ -38,7 +38,6 @@ li {
 
 .footer-info {
   justify-content: flex-start;
-  /* position: fixed; */
   bottom: 0;
   width: 100%;
 }
@@ -72,4 +71,3 @@ section {
 article {
   margin-bottom: 1rem;
 }
-
