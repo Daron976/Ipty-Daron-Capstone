@@ -180,7 +180,6 @@ h3 {
   flex-direction: column;
   gap: 0.5rem;
   max-height: 10rem;
-  /* max-width: fit-content; */
-  overflow-y: overlay;
+  overflow-y: scroll;
   width: 250px;
 }

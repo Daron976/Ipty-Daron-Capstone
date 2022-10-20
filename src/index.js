@@ -32,23 +32,6 @@ const getList = async () => {
   return data;
 };
 
-const commentBtn = document.querySelectorAll('.comment-btn');
-const commentArray = Array.from(commentBtn);
-const popUpHolder = document.querySelector('.popup-holder');
-
-document.addEventListener('DOMContentLoaded', () => {
-  getList()
-    .then((data) => {
-      const nameHolder = document.querySelectorAll('.brewery-name');
-      const arr = Array.from(nameHolder);
-      arr.forEach((task, i) => {
-        task.innerHTML += data[i].name;
-      });
-    });
-  getList()
-    .then((data) => displayPopUp(data));
-});
-
 const postComment = async (url, dataObj) => {
   const response = await fetch(url, {
     method: 'POST',
@@ -59,7 +42,7 @@ const postComment = async (url, dataObj) => {
   });
 
   return response;
-}
+};
 
 const getComment = async (id) => {
   const response = await fetch(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/WeiwNxFf2zcjWHsPu3w9/comments?item_id=${id}`)
@@ -68,6 +51,9 @@ const getComment = async (id) => {
   return response;
 };
 
+const commentBtn = document.querySelectorAll('.comment-btn');
+const commentArray = Array.from(commentBtn);
+const popUpHolder = document.querySelector('.popup-holder');
 
 const displayPopUp = async (dataArr) => commentArray.forEach((btn) => {
   btn.addEventListener('click', (e) => {
@@ -133,29 +119,41 @@ const displayPopUp = async (dataArr) => commentArray.forEach((btn) => {
             item_id: dataArr[i].id,
             username: commentName.value,
             comment: commentText.value,
-          }
+          };
 
           postComment('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/WeiwNxFf2zcjWHsPu3w9/comments', commentObj)
             .then((response) => response.json())
-            .then((json) => console.log(json));
+            .then((json) => json);
 
           document.querySelector('.comment-details').innerHTML += `
             <p>${commentName.value}: ${commentText.value}</p>
           `;
-        })
+        });
 
         getComment(dataArr[i].id)
-        .then((data) => {
-          data.forEach((task) => {
-            document.querySelector('.comment-details').innerHTML += `
-              <p>${task.username}: ${task.comment}</p>
-            `;
-          })
-        });
+          .then((data) => {
+            data.forEach((task) => {
+              document.querySelector('.comment-details').innerHTML += `
+                <p>${task.username}: ${task.comment}</p>
+              `;
+            });
+          });
       }
     }
   });
 });
 
-displayPopUp();
+document.addEventListener('DOMContentLoaded', () => {
+  getList()
+    .then((data) => {
+      const nameHolder = document.querySelectorAll('.brewery-name');
+      const arr = Array.from(nameHolder);
+      arr.forEach((task, i) => {
+        task.innerHTML += data[i].name;
+      });
+    });
+  getList()
+    .then((data) => displayPopUp(data));
+});
 
+displayPopUp();
