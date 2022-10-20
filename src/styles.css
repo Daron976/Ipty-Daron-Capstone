@@ -173,3 +173,14 @@ h3 {
 .form-data h3 {
   margin-top: 1rem;
 }
+
+.comment-details {
+  padding: 1rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-height: 10rem;
+  /* max-width: fit-content; */
+  overflow-y: overlay;
+  width: 250px;
+}
