@@ -70,13 +70,12 @@ async function postComment(url, dataObj) {
 }
 
 const getComment = async () => {
-  const response = await fetch();
+  const response = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/WeiwNxFf2zcjWHsPu3w9/comments?item_id=item1')
+    .then((res) => res.json());
 
   return response;
 };
 
-const commentName = document.querySelector('#name');
-const commentText = document.querySelector('.text');
 const commentId = 0;
 
 document.querySelector('#comment-submission').addEventListener(() => {
@@ -123,8 +122,6 @@ const displayPopUp = async () => commentArray.forEach((btn) => {
               <div class="grid">
                 <div class="comments">
                   <h3>Comments</h3>
-                  <p>this is a generic comment that goes on forever</p>
-                  <p>I just realised that i could have used the lopsum ipsom generic texts</p>
                 </div>
                 <div class="form-data">
                   <h3>Add a comment</h3>
@@ -148,6 +145,32 @@ const displayPopUp = async () => commentArray.forEach((btn) => {
           const removed = document.querySelector('.popup-window');
           popUpHolder.removeChild(removed);
         });
+
+        // const commentId = 0;
+
+        // document.querySelector('#comment-submission').addEventListener(() => {
+        //   const commentName = document.querySelector('#name');
+        //   const commentText = document.querySelector('.text');
+
+        //   const commentObj = {
+        //     item_id: commentId,
+        //     username: commentName.value,
+        //     comment: commentText.value,
+        //   }
+
+        //   commentId++;
+
+        //   postComment('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/Gr2VdVSYrpHkHWrCrrcv/comments', commentObj);
+
+        //   getComment()
+        //     .then((data) => {
+        //       data.forEach((task) => {
+        //         document.querySelector('.comments').innerHTML += `
+        //           <p>${task.username}: ${task.comment}</p>
+        //         `;
+        //       })
+        //     });
+        // })
       }
     }
   });
