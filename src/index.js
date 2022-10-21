@@ -8,8 +8,6 @@ import {
 } from './modules/displayPopUp.js';
 import { displayLikes, likeInteraction } from './modules/likesget.js';
 
-let likeArr = [];
-
 document.addEventListener('DOMContentLoaded', () => {
   getList()
     .then((data) => {
@@ -31,15 +29,5 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 displayPopUp();
-
-document.getElementById('menu-open').addEventListener('click', () => {
-  document.getElementById('mobile-menu').style.display = 'flex';
-  document.getElementById('menu-open').style.display = 'none';
-});
-
-document.querySelector('#menu-close').addEventListener('click', () => {
-  document.getElementById('mobile-menu').style.display = 'none';
-  document.getElementById('menu-open').style.display = 'flex';
-});
 
 likeInteraction();

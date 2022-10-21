@@ -109,7 +109,7 @@ export const displayPopUp = async (dataArr) => commentArray.forEach((btn, i) => 
               comment: commentText.value,
             };
 
-            postAPI('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/WeiwNxFf2zcjWHsPu3w9/comments', commentObj)
+            postAPI('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/HXa9GIOD94bm1hT63nt8/comments', commentObj)
               .then((response) => response.json())
               .then((json) => json);
 

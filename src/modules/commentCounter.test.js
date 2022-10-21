@@ -1,3 +1,4 @@
+/* eslint-disable */
 import commentCounter from "./commentCounter";
 
 describe('test counter function', () => {

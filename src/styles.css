@@ -312,20 +312,26 @@ h3 {
   }
 
   #menu-open {
-    display: block;
+    display: flex;
   }
 
   .nav-bar {
     align-items: flex-start;
+    position: fixed;
+    width: 100%;
+    padding-bottom: 1rem;
+    z-index: 4;
   }
-
+  
   .mobile-menu {
     display: none;
     padding-bottom: 5rem;
+    animation: slide 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   }
 
   .homepage-content {
     flex-direction: column;
+    padding-top: 7rem;
   }
 
   .data-img img {
@@ -341,6 +347,7 @@ h3 {
   .top-layer {
     width: fit-content;
     overflow-y: auto;
+    margin-top: 5.5rem;
   }
 
   .popup-info {

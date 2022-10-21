@@ -1,5 +1,3 @@
-const commentCounter = (array) => {
-  return array.length;
-}
+const commentCounter = ((array) => array.length);
 
 export default commentCounter;

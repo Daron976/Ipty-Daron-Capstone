@@ -25,7 +25,7 @@ export const getAPI = async (id) => {
 };
 
 export const getLikes = async () => {
-  const response = await fetch(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/HXa9GIOD94bm1hT63nt8/likes`)
+  const response = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/HXa9GIOD94bm1hT63nt8/likes')
     .then((res) => res.json());
 
   return response;
