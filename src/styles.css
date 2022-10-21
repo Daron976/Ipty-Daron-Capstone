@@ -49,9 +49,17 @@ li {
   margin: 5rem;
 }
 
-.fa-heart {
-  margin-top: -20px;
-  margin-left: 35%;
+.like-btn {
+  background: none;
+  border: none;
+  color: var(--text-color-3);
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.like-btn .fa-heart {
+  margin-right: 0.75rem;
 }
 
 /* home page */
