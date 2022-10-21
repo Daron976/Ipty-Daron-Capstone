@@ -1,6 +1,8 @@
 // eslint-disable-next-line
 import _ from 'lodash';
+import {getLikes, likeInteraction} from './modules/likesget';
 import './styles.css';
+
 
 const imgUrl = [
   {
@@ -115,5 +117,6 @@ const displayPopUp = async () => commentArray.forEach((btn) => {
     }
   });
 });
-
+getLikes();
+likeInteraction();
 displayPopUp();
