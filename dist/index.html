@@ -6,100 +6,123 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
   <script src="https://kit.fontawesome.com/8f283d01ad.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap" rel="stylesheet"> -->
   <link rel="stylesheet" href="styles.css">
   <title>API Webpage</title>
 <script defer src="main.js"></script></head>
 <body>
   <header id="header-content">
-    <nav class="nav-bar">
+    <nav class="nav-bar flex">
       <div class="logo">
-        <p class="logo-text">
-          web<br> logo
-        </p>
+          <img class="web-logo" src="https://raw.githubusercontent.com/Daron976/GitFlow/d6b685c6195700dfdc4bc207e61d1199671f9486/picsvg.svg" alt="barrel">
       </div>
-      <ul class="links">
-        <li class="link-item">Home</li>
-        <li class="link-item">About</li>
-        <li class="link-item">Contact</li>
+      <ul class="links flex">
+        <li class="link-item desktop-items" id="home">Home</li>
+        <li class="link-item desktop-items">About</li>
+        <li class="link-item desktop-items">Contact</li>
+        <li class="link-item open-menu"><span id="menu-open" class="material-symbols-outlined">menu_open</span></li>
       </ul>
+      <div id="mobile-menu">
+        <ul class="links flex">
+          <li class="link-item close-menu"><span id="menu-close" class="material-symbols-outlined">cancel</span></li>
+          <li class="link-item mobile-items">Home</li>
+          <li class="link-item mobile-items">About</li>
+          <li class="link-item mobile-items">Contact</li>
+      </div>
     </nav>
   </header>
   <section class="popup-holder">
 
   </section>
-  <section class="homepage-content">
-    <article id ="list-item">
-        <img class="bre-img" src="https://i.pinimg.com/564x/ec/61/e1/ec61e14cdffe29b9d101746777147836.jpg" alt="brewery">
-        <div class="article-details">
-          <div class="name-with-likes">
-            <p class="brewery-name"></p>
-            <div>
-              <li><button class='like-btn'><i class='fa-regular fa-heart'></i><span class='like-count'>0</span></button></li>
+  <section class="homepage-content flex">
+    <div class="first-container flex">
+      <article class="list-item flex">
+        <img class="bre-img">
+        <div class="article-details flex">
+          <div class="article-content flex">
+            <div class="name-with-likes flex">
+              <p class="brewery-name" id="4-stitch-brewing-co-bothell"></p>
+              <span class="material-symbols-outlined">heart_plus</span>
+
             </div>
+            <p class="likes">likes</p>
           </div>
           <div class="article-btn">
-            <button type="button" name="comment" class="comment-btn" value="4-stitch-brewing-co-bothell">Comment</button>
+            <button type="button" name="comment" class="comment-btn btn">Comment</button>
           </div>
         </div>
       </article>
-    <article id ="list-item">
-      <img class="bre-img" src="https://i.pinimg.com/564x/95/c0/8e/95c08eb331e50847b6be8e2de19e3afe.jpg" alt="brewery">
-      <div class="article-details">
-        <div class="name-with-likes">
-          <p class="brewery-name"></p>
-          <div>
-            <li><button class='like-btn'><i class='fa-regular fa-heart'></i><span class='like-count'>0</span></button></li>
+      <article class="list-item flex">
+        <img class="bre-img">
+        <div class="article-details flex">
+          <div class="article-content flex">
+            <div class="name-with-likes flex">
+              <p class="brewery-name" id="brockopp-brewing-valley-city"></p>
+              <span class="material-symbols-outlined">heart_plus</span>
+            </div>
+            <p class="likes">likes</p>
+          </div>
+          <div class="article-btn">
+            <button type="button" name="comment" class="comment-btn btn">Comment</button>
           </div>
         </div>
-        <div class="article-btn">
-          <button type="button" name="comment" class="comment-btn" value="brockopp-brewing-valley-city">Comment</button>
-        </div>
-      </div>
-    </article>
-    <article id ="list-item">
-      <img class="bre-img" src="https://i.pinimg.com/564x/07/2a/dd/072add42318c1aaefd083bc258503568.jpg" alt="brewery">
-      <div class="article-details">
-        <div class="name-with-likes">
-          <p class="brewery-name"></p>
-          <div>
-            <li><button class='like-btn'><i class='fa-regular fa-heart'></i><span class='like-count'>0</span></button></li>
+      </article>
+      <article class="list-item flex">
+        <img class="bre-img">
+        <div class="article-details flex">
+          <div class="article-content flex">
+            <div class="name-with-likes flex">
+              <p class="brewery-name" id="brouwerij-les-deplorables-woodinville"></p>
+              <span class="material-symbols-outlined">heart_plus</span>
+            </div>
+            <p class="likes">likes</p>
+          </div>
+          <div class="article-btn">
+            <button type="button" name="comment" class="comment-btn btn">Comment</button>
           </div>
         </div>
-        <div class="article-btn">
-          <button type="button" name="comment" class="comment-btn" value="brouwerij-les-deplorables-woodinville">Comment</button>
-        </div>
-      </div>
-    </article>
-    <article id ="list-item">
-      <img class="bre-img" src="https://i.pinimg.com/564x/93/c3/76/93c37604ff7280e5c7977399def0d1ca.jpg" alt="brewery">
-      <div class="article-details">
-        <div class="name-with-likes">
-          <p class="brewery-name"></p>
-          <div>
-            <li><button class='like-btn'><i class='fa-regular fa-heart'></i><span class='like-count'>0</span></button></li>
+      </article>
+    </div>
+
+    <div class="second-container flex">
+      <article class="list-item flex">
+        <img class="bre-img">
+        <div class="article-details flex">
+          <div class="article-content flex">
+            <div class="name-with-likes flex">
+              <p class="brewery-name" id="gnarly-cedar-brewing-greenleaf"></p>
+              <span class="material-symbols-outlined">heart_plus</span>
+            </div>
+            <p class="likes">likes</p>
+          </div>
+          <div class="article-btn">
+            <button type="button" name="comment" class="comment-btn btn">Comment</button>
           </div>
         </div>
-        <div class="article-btn">
-          <button type="button" name="comment" class="comment-btn" value="gnarly-cedar-brewing-greenleaf">Comment</button>
-        </div>
-      </div>
-    </article>
-    <article id ="list-item">
-      <img class="bre-img" src="https://i.pinimg.com/564x/3b/cf/d3/3bcfd3b3d8e6b9d4d6af787ee50b3364.jpg" alt="brewery">
-      <div class="article-details">
-        <div class="name-with-likes">
-          <p class="brewery-name"></p>
-          <div>
-            <li><button class='like-btn'><i class='fa-regular fa-heart'></i><span class='like-count'>0</span></button></li>
+      </article>
+
+      <article class="list-item flex">
+        <img class="bre-img">
+        <div class="article-details flex">
+          <div class="article-content flex">
+            <div class="name-with-likes flex">
+              <p class="brewery-name" id="oxford-brewing-company-grand-forks"></p>
+              <span class="material-symbols-outlined">heart_plus</span>
+            </div>
+            <p class="likes">likes</p>
+          </div>
+          <div class="article-btn">
+            <button type="button" name="comment" class="comment-btn btn">Comment</button>
           </div>
         </div>
-        <div class="article-btn">
-          <button type="button" name="comment" class="comment-btn" value="oxford-brewing-company-grand-forks">Comment</button>
-        </div>
-      </div>
-    </article>
+      </article>
+    </div>
+
   </section>
-  <footer class="footer-info">
+  <footer class="footer-info flex">
     <div class="footer-height">
         <p class="copyright-text">Created by Daron and Iptysam under MIT license</p>
     </div>

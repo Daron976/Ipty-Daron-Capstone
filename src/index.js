@@ -2,10 +2,10 @@
 import { getList } from './modules/API.js';
 import './styles.css';
 
-import {
-  imgUrl,
-  displayPopUp,
-} from './modules/displayPopUp.js';
+import { imgUrl, displayPopUp } from './modules/displayPopUp.js';
+import itemCounterFunction from './modules/itemsCount.js';
+
+const homepage = document.querySelector('#home');
 
 document.addEventListener('DOMContentLoaded', () => {
   getList()
@@ -26,6 +26,13 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 displayPopUp();
+
+let itemCounter = 0;
+
+setTimeout(async () => {
+  itemCounter = await itemCounterFunction();
+  homepage.innerHTML = `Home (${itemCounter})`;
+}, 5000);
 
 document.getElementById('menu-open').addEventListener('click', () => {
   document.getElementById('mobile-menu').style.display = 'flex';
