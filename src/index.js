@@ -1,12 +1,14 @@
 // eslint-disable-next-line
 import { getLikes, getList } from './modules/API.js';
 import './styles.css';
-
 import {
   imgUrl,
   displayPopUp,
 } from './modules/displayPopUp.js';
 import { displayLikes, likeInteraction } from './modules/likesget.js';
+import itemCounterFunction from './modules/itemsCount.js';
+
+const homepage = document.querySelector('#home');
 
 document.addEventListener('DOMContentLoaded', () => {
   getList()
@@ -31,3 +33,20 @@ document.addEventListener('DOMContentLoaded', () => {
 displayPopUp();
 
 likeInteraction();
+
+let itemCounter = 0;
+
+setTimeout(async () => {
+  itemCounter = await itemCounterFunction();
+  homepage.innerHTML = `Home (${itemCounter})`;
+}, 5000);
+
+document.getElementById('menu-open').addEventListener('click', () => {
+  document.getElementById('mobile-menu').style.display = 'flex';
+  document.getElementById('menu-open').style.display = 'none';
+});
+
+document.querySelector('#menu-close').addEventListener('click', () => {
+  document.getElementById('mobile-menu').style.display = 'none';
+  document.getElementById('menu-open').style.display = 'flex';
+});
