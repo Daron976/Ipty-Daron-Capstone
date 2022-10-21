@@ -1,6 +1,7 @@
 // eslint-disable-next-line
 import { getList } from './modules/API.js';
 import './styles.css';
+
 import {
   imgUrl,
   displayPopUp,
