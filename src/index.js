@@ -1,5 +1,6 @@
 // eslint-disable-next-line
 import _ from 'lodash';
+import { getLikes, likeInteraction } from './modules/likesget.js';
 import './styles.css';
 
 const imgUrl = [
