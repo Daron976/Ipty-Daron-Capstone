@@ -1,6 +1,6 @@
 import {
-  postComment,
-  getComment,
+  postAPI,
+  getAPI,
 } from './API.js';
 
 export const imgUrl = [
@@ -62,7 +62,7 @@ export const displayPopUp = async (dataArr) => commentArray.forEach((btn, i) => 
               </div>
               <div class="user-input">
                 <div class="comments">
-                  <h3>Comments (<span class="comment-counter">...</span>)</h3>
+                  <h3>Comments (<span class="comment-counter">0</span>)</h3>
                   <div class="comment-details flex"></div>
                 </div>
                 <div class="form-data flex">
@@ -109,7 +109,7 @@ export const displayPopUp = async (dataArr) => commentArray.forEach((btn, i) => 
               comment: commentText.value,
             };
 
-            postComment('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/WeiwNxFf2zcjWHsPu3w9/comments', commentObj)
+            postAPI('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/WeiwNxFf2zcjWHsPu3w9/comments', commentObj)
               .then((response) => response.json())
               .then((json) => json);
 
@@ -121,7 +121,7 @@ export const displayPopUp = async (dataArr) => commentArray.forEach((btn, i) => 
           }
         });
 
-        getComment(dataArr[i].id)
+        getAPI(dataArr[i].id)
           .then((data) => {
             data.forEach((task) => {
               document.querySelector('.comment-details').innerHTML += `

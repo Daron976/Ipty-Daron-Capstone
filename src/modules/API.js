@@ -5,7 +5,7 @@ export const getList = async () => {
   return data;
 };
 
-export const postComment = async (url, dataObj) => {
+export const postAPI = async (url, dataObj) => {
   const response = await fetch(url, {
     method: 'POST',
     body: JSON.stringify(dataObj),
@@ -17,8 +17,15 @@ export const postComment = async (url, dataObj) => {
   return response;
 };
 
-export const getComment = async (id) => {
-  const response = await fetch(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/WeiwNxFf2zcjWHsPu3w9/comments?item_id=${id}`)
+export const getAPI = async (id) => {
+  const response = await fetch(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/HXa9GIOD94bm1hT63nt8/comments?item_id=${id}`)
+    .then((res) => res.json());
+
+  return response;
+};
+
+export const getLikes = async () => {
+  const response = await fetch(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/HXa9GIOD94bm1hT63nt8/likes`)
     .then((res) => res.json());
 
   return response;
