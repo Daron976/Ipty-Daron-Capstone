@@ -181,14 +181,13 @@ article {
   padding: 1rem;
   width: 55%;
   color: #543124;
-  overflow-y: auto;
 }
 
 .popup-info {
   display: grid;
   grid-template-columns: auto auto;
   column-gap: 5rem;
-  justify-items: start;
+  justify-items: center;
   margin: 2rem 2rem;
 }
 
@@ -288,7 +287,6 @@ h3 {
   border-radius: 5px;
   max-width: 11.5rem;
   align-items: center;
-  margin-left: 2rem;
 }
 
 #empty-fields .material-symbols-outlined {
@@ -334,6 +332,7 @@ h3 {
 
   .top-layer {
     width: fit-content;
+    overflow-y: auto;
   }
 
   .popup-info {
