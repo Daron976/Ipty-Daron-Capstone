@@ -1,8 +1,11 @@
 // eslint-disable-next-line
-import { getList } from './modules/API.js';
+import { getLikes, getList } from './modules/API.js';
 import './styles.css';
-
-import { imgUrl, displayPopUp } from './modules/displayPopUp.js';
+import {
+  imgUrl,
+  displayPopUp,
+} from './modules/displayPopUp.js';
+import { displayLikes, likeInteraction } from './modules/likesget.js';
 import itemCounterFunction from './modules/itemsCount.js';
 
 const homepage = document.querySelector('#home');
@@ -23,9 +26,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   getList()
     .then((data) => displayPopUp(data));
+  getLikes()
+    .then((likes) => displayLikes(likes));
 });
 
 displayPopUp();
+
+likeInteraction();
 
 let itemCounter = 0;
 

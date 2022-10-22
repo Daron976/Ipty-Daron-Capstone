@@ -8,10 +8,8 @@
   <script src="https://kit.fontawesome.com/8f283d01ad.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap" rel="stylesheet"> -->
   <link rel="stylesheet" href="styles.css">
-  <title>API Webpage</title>
+  <title>DB Brewery</title>
 <script defer src="main.js"></script></head>
 <body>
   <header id="header-content">
@@ -20,10 +18,10 @@
           <img class="web-logo" src="https://raw.githubusercontent.com/Daron976/GitFlow/d6b685c6195700dfdc4bc207e61d1199671f9486/picsvg.svg" alt="barrel">
       </div>
       <ul class="links flex">
-        <li class="link-item desktop-items" id="home">Home</li>
+        <li class="link-item desktop-items test">Home</li>
         <li class="link-item desktop-items">About</li>
         <li class="link-item desktop-items">Contact</li>
-        <li class="link-item open-menu"><span id="menu-open" class="material-symbols-outlined">menu_open</span></li>
+        <li class="link-item open-menu"><span id="menu-open" class="material-symbols-outlined open">menu_open</span></li>
       </ul>
       <div id="mobile-menu">
         <ul class="links flex">
@@ -45,10 +43,10 @@
           <div class="article-content flex">
             <div class="name-with-likes flex">
               <p class="brewery-name" id="4-stitch-brewing-co-bothell"></p>
-              <span class="material-symbols-outlined">heart_plus</span>
+              <span class="material-symbols-outlined like-btn">heart_plus</span>
 
             </div>
-            <p class="likes">likes</p>
+            <p class="likes">likes: <span class="like-amount" id="4-stitch"></span></p>
           </div>
           <div class="article-btn">
             <button type="button" name="comment" class="comment-btn btn">Comment</button>
@@ -61,9 +59,9 @@
           <div class="article-content flex">
             <div class="name-with-likes flex">
               <p class="brewery-name" id="brockopp-brewing-valley-city"></p>
-              <span class="material-symbols-outlined">heart_plus</span>
+              <span class="material-symbols-outlined like-btn">heart_plus</span>
             </div>
-            <p class="likes">likes</p>
+            <p class="likes">likes: <span class="like-amount" id="brockopp"></span></p>
           </div>
           <div class="article-btn">
             <button type="button" name="comment" class="comment-btn btn">Comment</button>
@@ -76,9 +74,9 @@
           <div class="article-content flex">
             <div class="name-with-likes flex">
               <p class="brewery-name" id="brouwerij-les-deplorables-woodinville"></p>
-              <span class="material-symbols-outlined">heart_plus</span>
+              <span class="material-symbols-outlined like-btn">heart_plus</span>
             </div>
-            <p class="likes">likes</p>
+            <p class="likes">likes: <span class="like-amount" id="brouwerij"></span></p>
           </div>
           <div class="article-btn">
             <button type="button" name="comment" class="comment-btn btn">Comment</button>
@@ -94,9 +92,9 @@
           <div class="article-content flex">
             <div class="name-with-likes flex">
               <p class="brewery-name" id="gnarly-cedar-brewing-greenleaf"></p>
-              <span class="material-symbols-outlined">heart_plus</span>
+              <span class="material-symbols-outlined like-btn">heart_plus</span>
             </div>
-            <p class="likes">likes</p>
+            <p class="likes">likes: <span class="like-amount" id="gnarly"></span></p>
           </div>
           <div class="article-btn">
             <button type="button" name="comment" class="comment-btn btn">Comment</button>
@@ -110,9 +108,9 @@
           <div class="article-content flex">
             <div class="name-with-likes flex">
               <p class="brewery-name" id="oxford-brewing-company-grand-forks"></p>
-              <span class="material-symbols-outlined">heart_plus</span>
+              <span class="material-symbols-outlined like-btn">heart_plus</span>
             </div>
-            <p class="likes">likes</p>
+            <p class="likes">likes: <span class="like-amount" id="oxford"></span></p>
           </div>
           <div class="article-btn">
             <button type="button" name="comment" class="comment-btn btn">Comment</button>
