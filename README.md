@@ -54,6 +54,10 @@
 - Twitter: [@twitterhandle](https://twitter.com/WiafeDaron)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/daron-wiafe-1b88141a6/)
 
+## Acknowledgments
+
+- Hat tip to [Openbrewerydb](https://www.openbrewerydb.org/) for the API.
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
