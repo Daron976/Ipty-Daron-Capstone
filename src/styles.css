@@ -189,6 +189,7 @@ article {
   padding: 1rem;
   width: 55%;
   color: #543124;
+  overflow-y: auto;
 }
 
 .popup-info {
