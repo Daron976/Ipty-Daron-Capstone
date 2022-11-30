@@ -1,6 +1,6 @@
 # Ipty-Daron-Capstone
 
-> In this project, We build a web application based on data from an external API.
+> In this project, We build a web application that renders data from an external API. It also allows the users to like and comment on the various items available.
 
 ## Built With
 
