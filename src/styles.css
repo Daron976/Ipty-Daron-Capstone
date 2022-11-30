@@ -6,6 +6,7 @@
 
 html,
 body {
+  font-family: 'Cairo', sans-serif;
   background:
     radial-gradient(rgb(116, 87, 71, 0.7), rgb(150, 96, 68, 0.7)),
     url(https://images.unsplash.com/photo-1537567563737-dc995720616f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80);
@@ -16,8 +17,14 @@ body {
   color: white;
 }
 
-body {
-  font-family: 'Cairo', sans-serif;
+body::-webkit-scrollbar {
+  width: 7px;
+  background-color: #543124;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #555;
 }
 
 /* desktop version */
@@ -185,11 +192,21 @@ article {
   font-size: 1.2rem;
   justify-content: space-between;
   align-items: center;
-  margin: 1rem;
   padding: 1rem;
   width: 55%;
   color: #543124;
-  overflow-y: auto;
+  overflow-y: scroll;
+}
+
+.top-layer::-webkit-scrollbar {
+  width: 5px;
+  background: none;
+  margin-right: 1rem;
+}
+
+.top-layer::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #555;
 }
 
 .popup-info {
@@ -277,6 +294,17 @@ h3 {
   max-height: 10rem;
   overflow-y: auto;
   max-width: 250px;
+}
+
+.comment-details::-webkit-scrollbar {
+  width: 5px;
+  background: none;
+  margin-right: 1rem;
+}
+
+.comment-details::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #555;
 }
 
 #mobile-menu {
